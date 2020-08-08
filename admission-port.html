@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Admission Portal</title>
+        <meta UTF-8>
+        <meta name="viewport" content="width= device-width;initial-scale=1.5">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <link rel="stylesheet" href="admission-port.css">
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Poppins">
+    </head>
+    <body>
+        <div class= "header">
+            <div class= header-space>
+            CITADEL UNIVERSITY
+            <div class="header-right">
+                <a href="#home" class="active" style="color: white;">Home</a> &emsp;&emsp;&emsp;
+                <a href="#about" style="color: white;">About <i class="fa fa-chevron-circle-down"></i></a>&emsp;&emsp;&emsp;
+                <a href="#programs" style="color: white;">Programs <i class="fa fa-chevron-circle-down"></i></a>&emsp;&emsp;&emsp;
+                <a href="#admission" style="color: white;">Admission <i class="fa fa-chevron-circle-down"></i></a>
+                &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;
+                <form action="#search" class= "searchArea">
+                    <input type="text" class="searchTxt" placeholder="search">
+                    <button id="search-btn" type="submit" class="search" >
+                        <i class="fa fa-search" style="width: 15px;height: 15px;"></i>
+                    </button>
+                </form>
+            </div>
+            </div>
+        </div>
+
+        <div class="brief"><br><br><br>
+            <h1>WELCOME TO THE CITADEL UNIVERSITY <br>
+            <div style="font-size: 32px;">THE PLACE OF RAISING LEADERS FOR THE FUTURE</div> </h1>
+            <button type="button" href="#about" class="brief-button">Find out more</button>
+        </div>
+
+        <div class="floating">
+            <div class="float">&emsp;&emsp;<img src="vector2.png" alt=""><br>
+                <div class="float-in"> UNDERGRADUATE</div>
+            </div>&emsp;&emsp;&emsp;
+            <div class="float">&emsp;&emsp;<img src="Vector.png" alt=" postgraduate icon"><br>
+                <div class="float-in">POSTGRADUATE</div> 
+            </div>&emsp;&emsp;&emsp;
+            <div class="float">&emsp;<i class="fa fa-sticky-note"style="font-size: 60px; width:60px;height:60px;color: white; transform: rotate(180deg);"></i><br>
+               <div class="float-in">ADMISSION</div> 
+            </div>&emsp;&emsp;&emsp;
+            <div class="float">&emsp;&emsp;&emsp;&emsp;&emsp;<i class="fa fa-info"style="font-size: 60px;width:60px;height:60px; color: white;"></i><br>
+                <div class="float-in" style="width: 300px;">ONLINE APPLICATION</div>
+            </div>
+        </div>
+        
+        <div> 
+            <p class="section-head">FEATURED NEWS</p>
+        
+            <div class="section">
+                <div class="sect">
+                    <img src="student.jpg" alt="A student studying" style="width:329px;height:229px"><br>
+                    <b>INFORMATION ON 2020 POST-GRADUATE EXAMINATION</b>
+                    <p class="section-txt">The Post-graduate examinations will hold on the 25th August 2020. 
+                        All students are to advised to check online to their exam number.
+                        <div id="txt-area1" class="new"></div>
+                    </p><br><br><br><br><br><br>
+                    <button type="button" class="readMore" id="pst-grad-exam" onclick="myFunction1()">Read more</button>
+                </div>
+                <div  class="sect">
+                    <img src="studentStand.jpg" alt=" A student standing "><br>
+                    <b>INFORMATION ON RESUMPTION FOR UNDERGRADUATE STUDENTS</b><br>
+                    <p class="section-txt">Students are advised that resumption of the new semester for 
+                        undergraduate students commences 23rd August 2020.
+                        <div id="txt-area2"  class="new"></div>
+                    </p><br><br><br><br><br><br>
+                        <button type="button" class="readMore" id="under-grad-exam" onclick="myFunction2()">Read more</button>
+                </div>
+                <div  class="sect" style="margin-right: 0px;">
+                    <img src="threeStudents.jpg" alt="Three students standing">
+                    <b>INFORMATION ON 2021 POST-GRADUATE APPLICATION</b><br>
+                    <p class="section-txt">Applications are invited for suitably qualified candidates
+                        for admission into Citadel University.
+                        <div id="txt-area3"  class="new"></div>
+                    </p><br><br><br><br><br><br><br>
+                    <button type="button" class="readMore" id="pst-grad-app" onclick="myFunction3()">Read more</button>
+                </div>
+            </div>
+        </div>
+        <div class="info">
+                <b class="info-title">THE PHILOSOPHY OF CITADEL UNIVERSITY</b>
+                <p>The University is a centre of learning and research of distinction, combining 
+                    academic excellence with love for humanity, borne out of a God-fearing attitude 
+                    in accordance with the Baptist tradition of ethnical behavior, social responsibility
+                    and democratic ethos.An atmosphere where leaders are raisedand now valued for 
+                    transformative change in the society.
+                </p>
+                <b class="info-title">CORE VALUES</b>
+                <p> &emsp;&emsp;&emsp; Integrity &emsp;&emsp;&emsp; &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;   
+                    Diligence&emsp;&emsp;&emsp; &emsp;&emsp;&emsp;&emsp;&emsp;&emsp; 
+                      Empathy &emsp;&emsp;&emsp; &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;  
+                      Responsibility &emsp;&emsp;&emsp; &emsp;&emsp;&emsp; 
+                    Accountability  &emsp;&emsp;&emsp; </p>
+                <b >VISION</b>
+                <p>To raise a people of integrity, purpose, excellence and power who will continually 
+                    be a change agent in their community and their nation
+                </p>
+                <b >MISSION</b>
+                <p>To establish a community of leaders that will carry forward the purpose 
+                    of why they are created on earth.
+                </p>
+        </div>
+
+        <div class="more-contain">
+            <div class="more">
+                <b class="more-title">VIRTUAL LEARNING</b><br>
+                <p>The Predominant switch from the physical classes to the virtual 
+                        classes via the various collaboration tools for effective learning.
+                </p><br><br>
+                <p>Read more <i class="fa fa-arrow-right"></i></p>
+            </div>
+        
+            <img class="studentRead" src="student-study.png" alt="A student Reading" 
+            style="width:781px;height:423px;">
+        </div>
+        <div class="programs-contain">
+            <div  class="programs" style="width: 300px;"> 
+                <b class="num" >&emsp;&emsp;1000</b><br>
+                Undergraduate programs <br><br><br><br>
+                &emsp;&emsp;&emsp;PROGRAMS
+            </div >
+            <div  class="programs">
+                <b class="num">&emsp;&emsp;&emsp;800</b><br>
+                Doctorate, Masters and Phd programs <br><br><br>
+                &emsp;GRADUATE PROGRAM
+            </div>
+            <div  class="programs">
+                <b class="num">&emsp;&emsp;&emsp;200</b><br>
+                &emsp;&emsp;&emsp;Virtual programs <br><br><br><br>
+                &emsp;&emsp;ONLINE PROGRAMS 
+            </div>
+            <div  class="programs" style="margin: 0px;">
+                <b class="num">&emsp;&emsp;&emsp;60</b><br>
+                Specialisation programs <br><br><br><br>
+                &emsp;&emsp;&emsp;ACCREDITATION
+
+            </div>
+        </div>
+            <div class="end">
+                <div class="end-sect" style="margin-left: 52px;margin-right: 60px;width: 440px;">
+                    <b class="num">CITADEL UNIVERSITY</b><br>
+                    Lagos,Nigeria <br>
+                    info@citadeluniversity.edu.ng <br>
+                    admission@citadeluniversity.edu.ng <br>
+                    +2347102345641
+                </div>
+                <div class="end-sect">
+                    <b class="num">Quick links</b><br>
+                    About <br>
+                    Gallery <br>
+                    Admission <br>
+                    Student life <br>
+                    Contact us
+                </div>
+                <div class="end-sect" style="margin-right: 66px;">
+                    <b class="num">NEWSLETTER</b><br>
+                    Get the latest news from citadel university directly from your inbox. <br>
+                   <input type="text" placeholder="Enter Email address" class="email">
+                   <button type="submit" href="#emailSubmit" class="submit">
+                       <i class="fa fa-location-arrow" style="color:#2DBF79;font-size: 23px; transform: rotate(-93.5deg);"></i>
+                    </button>
+                </div>
+                
+        </div>
+            <footer> 
+                <i class="fa fa-copyright"></i>
+                 CITADEL UNIVERSITY 2020 All rights reserved
+                <div class="footer-right" style="display: inline;">
+                    <i class="fa fa-facebook" style="width: 22px;height: 24px;"></i> &emsp;&emsp;
+                    <i class="fa fa-instagram" style="width: 22px;height: 24px;"></i> &emsp;&emsp;
+                    <i class="fa fa-twitter-square" style="width: 22px;height: 24px;"></i> &emsp;&emsp;
+                    <i class="fa fa-linkedin" style="width: 22px;height: 24px;"></i>&emsp;&emsp;
+                </div>
+            </footer>
+            <script src="admission-port.js"></script>
+        
+
+        
+
+    </body>
+</html>
